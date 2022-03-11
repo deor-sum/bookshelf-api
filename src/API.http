@@ -1,0 +1,44 @@
+### get all book
+GET http://localhost:3000/books
+
+### get all ?name
+GET http://localhost:3000/books?name=Buku A
+
+### get all ?reading
+GET http://localhost:3000/books?reading=1
+
+### get all ?finished
+GET http://localhost:3000/books?finished=1
+
+
+
+### getbook by id
+GET http://localhost:3000/books/FF7JzddHrRXv4a3A
+
+### create book
+POST http://localhost:3000/books
+
+{
+    "name": "Buku A Walk to Sun",
+    "year": 2021,
+    "author": "Thadeo",
+    "summary": "Lorem ipsum dolor sit amet",
+    "publisher": "Indonesia INK",
+    "pageCount": 200,
+    "readPage": 200,
+    "reading": false
+}
+
+### Update book
+PUT http://localhost:3000/books/FF7JzddHrRXv4a3A
+
+{
+    "name":"walk to the SUn",
+    "year": 2021,
+    "author": "Satya",
+    "summary": "Lorem ipsum dolor sit amet",
+    "publisher": "Indonesia INK",
+    "pageCount": 200,
+    "readPage": 150,
+    "reading": false
+}
